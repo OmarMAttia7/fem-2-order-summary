@@ -15,6 +15,9 @@ module.exports = {
             favicon: "./src/images/favicon-32x32.png"
         }),
     ],
+    devServer: {
+        static: './dist',
+    },
     module: {
         rules: [
             {
