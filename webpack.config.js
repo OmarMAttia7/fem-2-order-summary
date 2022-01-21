@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    mode: "development",
+    mode: "production",
     entry: './src/index.js',
     output: {
         filename: '[name].bundle.js',
@@ -15,9 +15,6 @@ module.exports = {
             favicon: "./src/images/favicon-32x32.png"
         }),
     ],
-    devServer: {
-        static: './dist',
-    },
     module: {
         rules: [
             {
