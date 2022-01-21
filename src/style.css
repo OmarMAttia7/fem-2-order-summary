@@ -1,7 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/*General Styling*/
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
 body {
     padding: 0;
     margin: 0;
+    background-image: url('./images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
+/*Typography {*/
+
+    h1 {  
+        font-size: 1.6rem;
+        font-weight: 900;
+    }
+    
+    h2 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    h1, h2 {
+        color: hsl(223, 47%, 23%);
+    }
+    
+    h1, p {
+        margin: 0 0 1.6rem 0;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        color: hsl(224, 23%, 55%)
+    }
+
+/*Typography }*/
+
+/*Main Content {*/
+
+main {
+    background-image: url(./images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    min-width: 345px;
+    max-width: 450px;
+    margin: 2.56rem 1.6rem;
+    padding: calc(220px + 1.6rem) 1.6rem 1.6rem 1.6rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+/*Plan Info Section {*/
+
+.plan-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1rem;
+    margin-bottom: 1.6rem;
+    border-radius: 1rem;
+    justify-content: space-between;
+}
+
+.plan-info > div {
+    padding-left: calc(1rem + 48px);
+    background-image: url(./images/icon-music.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.plan-info p {
+    margin: 0;
+}
+
+a {
+    color: hsl(223, 47%, 23%);
+}
+
+a:hover {
+    color: hsl(245, 98%, 65%);
+    text-decoration: none;
+}
+
+/*Plan Info Section }*/
+
+/*Button Container {*/
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    appearance: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+button.submit-btn {
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    box-shadow: 0 10px 20px hsl(224, 23%, 55%);
+}
+
+button.submit-btn:hover {
+    background-color: hsl(245, 98%, 65%);
+}
+
+button.cancel-btn {
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+}
+
+button.cancel-btn:hover {
+    color: hsl(225, 18%, 35%);
+}
+
+/*Button Container }*/
+
+/*Main Content }*/
+
+/*Desktop Design {*/
+
+@media (min-width: 500px) {
+    body {
+        background-image: url('./images/pattern-background-desktop.svg');
+    }
+}
+
+/*Desktop Design }*/
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
